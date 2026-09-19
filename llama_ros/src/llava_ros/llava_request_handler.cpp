@@ -56,6 +56,7 @@ void LlavaCompletionRequestHandler::handle(
   std::string prompt_str = converted_prompt;
   mtmd_input_text inp_txt = {
       prompt_str.c_str(),
+      /* text_len */ prompt_str.size(),
       /* add_special */ true,
       /* parse_special */ true,
   };
@@ -105,6 +106,7 @@ void LlavaChatCompletionRequestHandler::handle(
   std::string prompt_str = chat_context.chat_prompt_instance.prompt;
   mtmd_input_text inp_txt = {
       prompt_str.c_str(),
+      /* text_len */ prompt_str.size(),
       /* add_special */ true,
       /* parse_special */ true,
   };
