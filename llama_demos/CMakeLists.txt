@@ -29,6 +29,8 @@ set(DEMO_NODES
   chatllama_reasoning_tools_demo_node
   chatllama_pddl_demo_node
   llama_slots_demo_node
+  chat_topic_demo_node
+  chat_vision_topic_demo_node
 )
 
 foreach(NODE ${DEMO_NODES})
